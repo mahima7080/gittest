@@ -10,8 +10,10 @@ public class addition {
 
     */
         addition aa=new addition();
+        addition ab=new addition();
         //int r=aa.add(5,9);
         System.out.println(aa.add(5,9));
+        System.out.println(ab.add(10,9));
     }
 
      int add(int a,int b)
