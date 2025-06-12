@@ -3,7 +3,7 @@ public class table {
     public static void main(String[]args)
     {
        int i;
-        for (i=1;i<=11;i++)
+        for (i=1;i<=20;i++)
         {
             int result = num*i;
             System.out.printf("%d * %d=%d",num,i,result).println();
