@@ -17,11 +17,9 @@ public class hackerrank_1 {
             {
                 System.out.println("Weird");
             }
-            else
-            {
+            else {
                 System.out.println(" Not Weird");
             }
-
         }
         else
         {
