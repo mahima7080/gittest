@@ -1,5 +1,5 @@
 package test_abt13x;
-
+// Write a program to find prime numbers between 1 and 100 using loops.
 public class question_15 {
     public static void main(String[] args) {
         int i, num, count;

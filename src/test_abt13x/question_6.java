@@ -1,5 +1,5 @@
 package test_abt13x;
-
+//. Write a program to check if a number is positive, negative, or zero.
 import java.util.Scanner;
 
 public class question_6 {

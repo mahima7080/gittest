@@ -1,5 +1,5 @@
 package test_abt13x;
-
+// Write a program to create a simple calculator using switch statement.
 import java.util.Scanner;
 
 public class question_10 {

@@ -1,4 +1,5 @@
 package test_abt13x;
+//Create a program to calculate factorial of a number using while loop.
 
 import java.util.Scanner;
 

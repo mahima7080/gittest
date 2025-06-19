@@ -1,5 +1,5 @@
 package test_abt13x;
-
+//  Write a Java program to declare variables of all primitive data types and print their default values.
 public class ques_1 {
     byte b;
     short s;

@@ -1,5 +1,5 @@
 package test_abt13x;
-
+// Create a program to print a pattern using nested loops.
 public class question_14 {
     public static void main(String[] args) {
         int i, j;

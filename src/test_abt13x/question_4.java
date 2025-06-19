@@ -1,5 +1,5 @@
 package test_abt13x;
-
+// Write a program to demonstrate type casting (both implicit and explicit).
 public class question_4 {
     public static void main(String[] args) {
         int a=3;

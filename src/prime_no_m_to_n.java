@@ -1,21 +1,21 @@
 public class prime_no_m_to_n {
     public static void main(String[] args) {
-        int i, num, count;
+        int i;
+        int m = 1, n = 10;
 
-        // Checking for prime numbers
-        for (num = 1; num <= 100; num++) {
-            count = 0;
-            for (i = 2; i <= num / 2; i++) {
-                if (num % i == 0) {
+
+        for (i = m; i <= n; i++) {
+            int count = 0; // Moved inside the loop to reset for each i
+
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
                     count++;
-                    break;
                 }
             }
 
-
-            if (count == 0 && num != 1) {
-                System.out.println(num);
+            if (count == 2) {
+                System.out.println(i);
             }
         }
     }
-}
+    }

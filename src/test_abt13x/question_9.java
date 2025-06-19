@@ -1,5 +1,5 @@
 package test_abt13x;
-
+// Create a program using switch statement to display day of the week.
 import java.util.Scanner;
 
 public class question_9 {

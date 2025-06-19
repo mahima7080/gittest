@@ -1,5 +1,5 @@
 package test_abt13x;
-
+//Write a program to print multiplication table using nested loops.
 import java.util.Scanner;
 
 public class question_13 {
