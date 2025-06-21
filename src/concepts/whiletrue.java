@@ -1,3 +1,5 @@
+package concepts;
+
 import java.util.Scanner;
 
 public class whiletrue {
@@ -9,7 +11,8 @@ public class whiletrue {
 
             if (num == 0) {
                 System.out.println("Exiting the loop.");
-                break; // This stops the loop
+                // This stops the loop
+                break;
             }
 
             System.out.println("You entered: " + num);

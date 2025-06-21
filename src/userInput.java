@@ -9,15 +9,16 @@ public class userInput {
         /*
         * take user input through edit configuration
         * you will get it before run button */
-        num=Integer.parseInt(args[0]);
+
+        num=Integer.parseInt(args[1]);
 
         if (num<0)
         {
-            System.out.println("negative");
+            System.out.println(num+ "negative");
         }
         else
         {
-            System.out.println("positive");
+            System.out.println(num+"positive");
         }
 
     }
