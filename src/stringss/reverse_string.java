@@ -3,9 +3,10 @@ package stringss;
 public class reverse_string {
     public static void main(String[] args) {
         String s="lavi shanu mummy";
-        char temp;
+
         char [] arr=s.toCharArray();
         int len=arr.length;
+        char temp;
         System.out.println(len);
         for (int i=0;i<arr.length;i++)
         {
@@ -16,7 +17,6 @@ public class reverse_string {
                     temp= arr[i];
                     arr[i]=arr[j];
                     arr[j]=temp;
-
 
 
             }

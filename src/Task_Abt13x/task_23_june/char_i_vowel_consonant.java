@@ -22,7 +22,6 @@ public class char_i_vowel_consonant {
         }
 
 
-
         if (c=='a'||c=='e' ||c=='i'|| c=='o'||c=='u')
         {
             System.out.println("character is vowel");
