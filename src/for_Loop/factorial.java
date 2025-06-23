@@ -10,7 +10,7 @@ int num;
         if (!scanner.hasNextInt())
         {
             System.out.println("enter interger you fool");
-           return;
+           return;//Exits the method entirely and optionally returns a value
         }
         num=scanner.nextInt();
         int fact=1;
