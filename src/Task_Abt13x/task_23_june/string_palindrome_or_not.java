@@ -11,7 +11,9 @@ public class string_palindrome_or_not {
        {
            aar2[arr1.length-i]=arr1[i-1];
        }
-       if(Arrays.toString(arr1).equals(Arrays.toString(aar2)))
+       String s1=Arrays.toString(arr1);
+       String s2=Arrays.toString(aar2);
+       if(s1.equals(s2))
        {
            System.out.println("palindrome");
        }
