@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class Switch_calculator {
-   static int a=10,b=2,result;
+   static float a,b,result;
+
     public static void main(String[] args)
     {
         String  s;
@@ -9,7 +10,11 @@ public class Switch_calculator {
 System.out.println("enter addition/ subtraction/ multiplication/ division/ modulo");
         Scanner scanner= new Scanner(System.in);
         s= scanner.next();
-      //  System.out.println(s);
+        a=scanner.nextFloat();
+        b=scanner.nextFloat();
+
+
+        //  System.out.println(s);
        s=s.toLowerCase();
     //   System.out.println(s);
       /* if(s.equals("modulo"))
