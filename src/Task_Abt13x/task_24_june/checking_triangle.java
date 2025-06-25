@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class checking_triangle {
     public static void main(String[] args) {
         int side1,side2,side3;
+        System.out.println("enter all three sides");
         Scanner sc=new Scanner(System.in);
         side1=sc.nextInt();
         side2=sc.nextInt();
