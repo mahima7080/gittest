@@ -8,7 +8,7 @@ public class array_dublicate {
         {
             for (int j=i+1;j<arr.length;j++)
             {
-                if (arr[i]==arr[j] && i!=j)
+                if (arr[i]==arr[j] &&i!=j)
                 {
                     System.out.println("dublicate");
                     pos_j=j;

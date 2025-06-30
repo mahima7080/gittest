@@ -1,4 +1,21 @@
 package Task_Abt13x.task_27_june;
+/**
+ Find if a Person is Senior Citizen Based on Age.
+
+         :- take the age input from the user.
+
+        Implement Age Category Logic:
+
+Define the criteria for different age categories:
+
+Child: Age 0 to 12
+
+Teenager: Age 13 to 19
+
+Adult: Age 20 to 64
+
+Senior Citizen: Age 65 and older
+ */
 
 import java.util.Scanner;
 

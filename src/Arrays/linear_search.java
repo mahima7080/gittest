@@ -11,6 +11,7 @@ public class linear_search {
             {
                 found=true;
                 pos=i;
+                break;
             }
         }
         if (found)
