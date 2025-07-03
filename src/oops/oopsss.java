@@ -14,6 +14,11 @@ class student{
     {
         System.out.println(stu.name + stu.Age);
     }
+    static void hi()
+    {
+        int a=7;
+        System.out.println("hi");
+    }
 }
 
 public class oopsss {
@@ -28,9 +33,15 @@ public class oopsss {
         s2.Age=7;
         s2.dispaly();
         student s3=s2;
-        s3.d(s2);
+        s3.d(s2);;
+h.mahi();
+        student.hi();
        // System.out.println(a);
 
+        test t=new test();
+        System.out.println(t.test);
+
     }
+
 }
 

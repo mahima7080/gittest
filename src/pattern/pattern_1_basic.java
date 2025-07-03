@@ -1,5 +1,6 @@
 package pattern;
 
+
 public class pattern_1_basic {
     public static void main(String[] args) {
         int i, j;
