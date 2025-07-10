@@ -7,6 +7,7 @@ public class eligible_to_vote {
         System.out.println("enter the age");
         int age;
         Scanner sc=new Scanner(System.in);
+
         if (!sc.hasNextInt())
         {
             System.out.println("enter digits only");

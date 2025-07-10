@@ -20,6 +20,7 @@ class derive extends base
     int x=super.a;
     void show(){
         System.out.println("derive");
+        super.show();
         }
     void hi()
     {

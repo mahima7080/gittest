@@ -85,14 +85,19 @@ Instead, it uses setters and getters — special functions that control access.
 
     // Method to set password with validation
     public void setPassword(String inputUsername, String newPassword) {
-        if (isValidUser(inputUsername)) {
-            if (newPassword.length() >= 6) {
+        if (isValidUser(inputUsername))
+        {
+            if (newPassword.length() >= 6)
+            {
                 this.password = newPassword;
                 System.out.println("✅ Password set successfully for " + username);
-            } else {
+            } else
+            {
                 System.out.println("❌ Password too short! Must be at least 6 characters.");
             }
-        } else {
+        }
+        else
+        {
             System.out.println("❌ Invalid user. Cannot set password.");
         }
     }
