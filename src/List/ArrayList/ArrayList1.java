@@ -42,7 +42,13 @@ public class ArrayList1 {
 
 
 
+
+
+
+
         Iterator itt=arrlist2.iterator();
+
+
         while (itt.hasNext())
         {
             System.out.println(

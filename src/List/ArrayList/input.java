@@ -8,7 +8,6 @@ public class input {
     public static void main(String[] args) {
         ArrayList<Integer> l=new ArrayList<>();
         Scanner sc= new Scanner(System.in);
-
         while (true)
         {
             int val= sc.nextInt();
@@ -18,7 +17,6 @@ public class input {
             }
             l.add(val);
             System.out.println("enter 0 if you wan to stop adding elements");
-
         }
         l.set(1,25);
 
@@ -27,7 +25,6 @@ public class input {
         {
             System.out.println(it.next());
         }
-
 
         for (int i=0;i<l.size();i++)
         {
