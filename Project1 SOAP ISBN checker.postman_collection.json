@@ -1,0 +1,452 @@
+{
+	"info": {
+		"_postman_id": "31c324b8-49e7-471c-8632-0baad58f0cc7",
+		"name": "Project1 SOAP ISBN checker",
+		"description": "This project checks whether the ISBN no is valid or not by sending ISBN no to the server, and server will give response in boolean that is true or false. If ISBN no is valid it gives true else it gives false.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46916083",
+		"_collection_link": "https://mahimasrivastava.postman.co/workspace/ATB13X~9e069bae-ac94-4ec2-97cc-4b1e82780338/collection/46916083-31c324b8-49e7-471c-8632-0baad58f0cc7?action=share&source=collection_link&creator=46916083"
+	},
+	"item": [
+		{
+			"name": "TC#1 Positive valid",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://webservices.daehosting.com/ISBN/IsValidISBN10\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.daehosting.com/services/isbnservice.wso",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"daehosting",
+						"com"
+					],
+					"path": [
+						"services",
+						"isbnservice.wso"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://webservices.daehosting.com/services/isbnservice.wso' \\\r--header 'Content-Type: text/xml; charset=utf-8' \\\r--header 'SOAPAction: \"http://webservices.daehosting.com/ISBN/IsValidISBN10\"' \\\r--data '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>'"
+			},
+			"response": []
+		},
+		{
+			"name": "TC#2Positive invalid Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://webservices.daehosting.com/ISBN/IsValidISBN10\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.daehosting.com/services/isbnservice.wso",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"daehosting",
+						"com"
+					],
+					"path": [
+						"services",
+						"isbnservice.wso"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://webservices.daehosting.com/services/isbnservice.wso' \\\r--header 'Content-Type: text/xml; charset=utf-8' \\\r--header 'SOAPAction: \"http://webservices.daehosting.com/ISBN/IsValidISBN10\"' \\\r--data '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>'"
+			},
+			"response": []
+		},
+		{
+			"name": "TC#3 Negative invalid Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://webservices.daehosting.com/ISBN/IsValidISBN10\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.daehosting.com/services/isbnservice.wso",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"daehosting",
+						"com"
+					],
+					"path": [
+						"services",
+						"isbnservice.wso"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://webservices.daehosting.com/services/isbnservice.wso' \\\r--header 'Content-Type: text/xml; charset=utf-8' \\\r--header 'SOAPAction: \"http://webservices.daehosting.com/ISBN/IsValidISBN10\"' \\\r--data '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>'"
+			},
+			"response": []
+		},
+		{
+			"name": "TC#4 null",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://webservices.daehosting.com/ISBN/IsValidISBN10\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.daehosting.com/services/isbnservice.wso",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"daehosting",
+						"com"
+					],
+					"path": [
+						"services",
+						"isbnservice.wso"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://webservices.daehosting.com/services/isbnservice.wso' \\\r--header 'Content-Type: text/xml; charset=utf-8' \\\r--header 'SOAPAction: \"http://webservices.daehosting.com/ISBN/IsValidISBN10\"' \\\r--data '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>'"
+			},
+			"response": []
+		},
+		{
+			"name": "TC#5 long Interger",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://webservices.daehosting.com/ISBN/IsValidISBN10\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.daehosting.com/services/isbnservice.wso",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"daehosting",
+						"com"
+					],
+					"path": [
+						"services",
+						"isbnservice.wso"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://webservices.daehosting.com/services/isbnservice.wso' \\\r--header 'Content-Type: text/xml; charset=utf-8' \\\r--header 'SOAPAction: \"http://webservices.daehosting.com/ISBN/IsValidISBN10\"' \\\r--data '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>'"
+			},
+			"response": []
+		},
+		{
+			"name": "TC#6 blank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://webservices.daehosting.com/ISBN/IsValidISBN10\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.daehosting.com/services/isbnservice.wso",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"daehosting",
+						"com"
+					],
+					"path": [
+						"services",
+						"isbnservice.wso"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://webservices.daehosting.com/services/isbnservice.wso' \\\r--header 'Content-Type: text/xml; charset=utf-8' \\\r--header 'SOAPAction: \"http://webservices.daehosting.com/ISBN/IsValidISBN10\"' \\\r--data '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>'"
+			},
+			"response": []
+		},
+		{
+			"name": "TC#7 String instead of numeric value",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://webservices.daehosting.com/ISBN/IsValidISBN10\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.daehosting.com/services/isbnservice.wso",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"daehosting",
+						"com"
+					],
+					"path": [
+						"services",
+						"isbnservice.wso"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://webservices.daehosting.com/services/isbnservice.wso' \\\r--header 'Content-Type: text/xml; charset=utf-8' \\\r--header 'SOAPAction: \"http://webservices.daehosting.com/ISBN/IsValidISBN10\"' \\\r--data '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>'"
+			},
+			"response": []
+		},
+		{
+			"name": "TC#8 without header",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://webservices.daehosting.com/ISBN/IsValidISBN10\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.daehosting.com/services/isbnservice.wso",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"daehosting",
+						"com"
+					],
+					"path": [
+						"services",
+						"isbnservice.wso"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://webservices.daehosting.com/services/isbnservice.wso' \\\r--header 'Content-Type: text/xml; charset=utf-8' \\\r--header 'SOAPAction: \"http://webservices.daehosting.com/ISBN/IsValidISBN10\"' \\\r--data '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>'"
+			},
+			"response": []
+		},
+		{
+			"name": "TC#9 different content type",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://webservices.daehosting.com/ISBN/IsValidISBN10\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.daehosting.com/services/isbnservice.wso",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"daehosting",
+						"com"
+					],
+					"path": [
+						"services",
+						"isbnservice.wso"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://webservices.daehosting.com/services/isbnservice.wso' \\\r--header 'Content-Type: text/xml; charset=utf-8' \\\r--header 'SOAPAction: \"http://webservices.daehosting.com/ISBN/IsValidISBN10\"' \\\r--data '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>'"
+			},
+			"response": []
+		},
+		{
+			"name": "TC#10 without body",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://webservices.daehosting.com/ISBN/IsValidISBN10\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.daehosting.com/services/isbnservice.wso",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"daehosting",
+						"com"
+					],
+					"path": [
+						"services",
+						"isbnservice.wso"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://webservices.daehosting.com/services/isbnservice.wso' \\\r--header 'Content-Type: text/xml; charset=utf-8' \\\r--header 'SOAPAction: \"http://webservices.daehosting.com/ISBN/IsValidISBN10\"' \\\r--data '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>'"
+			},
+			"response": []
+		},
+		{
+			"name": "TC#11 wrong url",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://webservices.daehosting.com/ISBN/IsValidISBN10\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.daehosting.com/services/isbnservice.wso",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"daehosting",
+						"com"
+					],
+					"path": [
+						"services",
+						"isbnservice.wso"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://webservices.daehosting.com/services/isbnservice.wso' \\\r--header 'Content-Type: text/xml; charset=utf-8' \\\r--header 'SOAPAction: \"http://webservices.daehosting.com/ISBN/IsValidISBN10\"' \\\r--data '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r  <soap:Body>\r    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\r      <sISBN>0-7475-3269-9</sISBN>\r    </IsValidISBN10>\r  </soap:Body>\r</soap:Envelope>'"
+			},
+			"response": []
+		}
+	]
+}
